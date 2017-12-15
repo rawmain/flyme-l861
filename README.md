@@ -7,6 +7,7 @@ Flyme (MM6.0) files for AMOI L861
 
 2. Download webview.apk file from https://mega.nz/#F!htJWDa5R!DEGF7BmiTusxdrlA3pAJ1g!AkoW0CrB . You have to copy it in vendor/system/app/webview folder
 
+--------
 
 # Flyme 6 Patchrom Guide (English)
 
