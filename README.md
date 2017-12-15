@@ -10,7 +10,7 @@ Flyme (MM6.0) files for AMOI L861
 
 # Flyme 6 Patchrom Guide (English)
 
-Auther: FlymeDev_Finder(XDA:sunnyfinder)
+Author: FlymeDev_Finder(XDA:sunnyfinder)
 
 # Establishing a Build Environment
 
