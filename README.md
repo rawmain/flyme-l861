@@ -1,5 +1,5 @@
 # flyme-l861
-Flyme (MM6.0) files for AMOI L861
+Flyme 6.7.12.8IR (MM6.0) files for AMOI L861 (aka Stonex One / Santin Dante-Marconi)
 
 # Pre-requirements 
 
@@ -172,6 +172,28 @@ Run the following to upgrade Flyme version for your device
     $ make clean
 
     $ flyme upgrade
+
+--------
+
+# Troubleshooting
+
+If You experience R/W permission KO and/or 'cp stat' issues during fullota phase, switch before to shell environment with root privileges (sudo -s in Ubuntu for instance).
+
+Just in case of issues with merge-passages, change APKTOOL_FRAME_PATH attribution in build/locals.mk (line 105), in order to match source dir for installed files - according to error message.
+
+For instance, if you get :
+
+apktool if(install framework): merged ...
+I: Framework installed to: /root/.local/share/apktool/framework/1-merged_l861.apk
+I: Framework installed to: /root/.local/share/apktool/framework/63-merged_l861.apk
+I: Framework installed to: <b>/root/.local/share/apktool/framework/</b>2-merged_l861.apk
+cp: cannot stat '<b>/home/android/.local/share/apktool/framework/</b>/1-merged_l861.apk': No such file or directory
+
+Apply the following changes to build/locals.mk
+
+APKTOOL_FRAME_PATH := /root/.local/share/apktool/framework
+
+--------
 
 # International Developer Feedback Channel
 
