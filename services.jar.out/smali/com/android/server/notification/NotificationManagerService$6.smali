@@ -418,10 +418,10 @@
     .prologue
     const/4 v0, 0x0
 
+    .line 1539
+    invoke-static {}, Lcom/android/server/notification/NotificationManagerService;->-wrap15()V
 
-    invoke-static {}, Lcom/android/server/notification/NotificationManagerService;->checkCallerIsSystemOrSystemUI()V
-
-
+    .line 1540
     iget-object v1, p0, Lcom/android/server/notification/NotificationManagerService$6;->this$0:Lcom/android/server/notification/NotificationManagerService;
 
     invoke-static {v1}, Lcom/android/server/notification/NotificationManagerService;->-get5(Lcom/android/server/notification/NotificationManagerService;)Landroid/app/AppOpsManager;
@@ -2780,8 +2780,10 @@
     .param p2, "uid"    # I
 
     .prologue
-    invoke-static {}, Lcom/android/server/notification/NotificationManagerService;->checkCallerIsSystemOrSystemUI()V
+    .line 1566
+    invoke-static {}, Lcom/android/server/notification/NotificationManagerService;->-wrap15()V
 
+    .line 1567
     iget-object v0, p0, Lcom/android/server/notification/NotificationManagerService$6;->this$0:Lcom/android/server/notification/NotificationManagerService;
 
     invoke-static {v0}, Lcom/android/server/notification/NotificationManagerService;->-get24(Lcom/android/server/notification/NotificationManagerService;)Lcom/android/server/notification/RankingHelper;
@@ -2801,8 +2803,10 @@
     .param p2, "uid"    # I
 
     .prologue
-    invoke-static {}, Lcom/android/server/notification/NotificationManagerService;->checkCallerIsSystemOrSystemUI()V
- 
+    .line 1553
+    invoke-static {}, Lcom/android/server/notification/NotificationManagerService;->-wrap15()V
+
+    .line 1554
     iget-object v0, p0, Lcom/android/server/notification/NotificationManagerService$6;->this$0:Lcom/android/server/notification/NotificationManagerService;
 
     invoke-static {v0}, Lcom/android/server/notification/NotificationManagerService;->-get24(Lcom/android/server/notification/NotificationManagerService;)Lcom/android/server/notification/RankingHelper;
@@ -2822,8 +2826,10 @@
     .param p2, "uid"    # I
 
     .prologue
-     invoke-static {}, Lcom/android/server/notification/NotificationManagerService;->checkCallerIsSystemOrSystemUI()V
+    .line 1579
+    invoke-static {}, Lcom/android/server/notification/NotificationManagerService;->-wrap15()V
 
+    .line 1580
     iget-object v0, p0, Lcom/android/server/notification/NotificationManagerService$6;->this$0:Lcom/android/server/notification/NotificationManagerService;
 
     invoke-static {v0}, Lcom/android/server/notification/NotificationManagerService;->-get24(Lcom/android/server/notification/NotificationManagerService;)Lcom/android/server/notification/RankingHelper;
@@ -3586,12 +3592,15 @@
     .param p3, "enabled"    # Z
 
     .prologue
-     invoke-static {}, Lcom/android/server/notification/NotificationManagerService;->checkCallerIsSystemOrSystemUI()V
+    .line 1529
+    invoke-static {}, Lcom/android/server/notification/NotificationManagerService;->-wrap15()V
 
+    .line 1531
     iget-object v0, p0, Lcom/android/server/notification/NotificationManagerService$6;->this$0:Lcom/android/server/notification/NotificationManagerService;
 
     invoke-virtual {v0, p1, p2, p3}, Lcom/android/server/notification/NotificationManagerService;->setNotificationsEnabledForPackageImpl(Ljava/lang/String;IZ)V
 
+    .line 1528
     return-void
 .end method
 
@@ -3925,8 +3934,10 @@
     .param p3, "peekable"    # Z
 
     .prologue
-     invoke-static {}, Lcom/android/server/notification/NotificationManagerService;->checkCallerIsSystemOrSystemUI()V
+    .line 1559
+    invoke-static {}, Lcom/android/server/notification/NotificationManagerService;->-wrap15()V
 
+    .line 1561
     iget-object v0, p0, Lcom/android/server/notification/NotificationManagerService$6;->this$0:Lcom/android/server/notification/NotificationManagerService;
 
     invoke-static {v0}, Lcom/android/server/notification/NotificationManagerService;->-get24(Lcom/android/server/notification/NotificationManagerService;)Lcom/android/server/notification/RankingHelper;
@@ -3946,8 +3957,10 @@
     .param p3, "priority"    # I
 
     .prologue
-     invoke-static {}, Lcom/android/server/notification/NotificationManagerService;->checkCallerIsSystemOrSystemUI()V
+    .line 1546
+    invoke-static {}, Lcom/android/server/notification/NotificationManagerService;->-wrap15()V
 
+    .line 1547
     iget-object v0, p0, Lcom/android/server/notification/NotificationManagerService$6;->this$0:Lcom/android/server/notification/NotificationManagerService;
 
     invoke-static {v0}, Lcom/android/server/notification/NotificationManagerService;->-get24(Lcom/android/server/notification/NotificationManagerService;)Lcom/android/server/notification/RankingHelper;
@@ -3972,8 +3985,10 @@
     .param p3, "visibility"    # I
 
     .prologue
-     invoke-static {}, Lcom/android/server/notification/NotificationManagerService;->checkCallerIsSystemOrSystemUI()V
+    .line 1572
+    invoke-static {}, Lcom/android/server/notification/NotificationManagerService;->-wrap15()V
 
+    .line 1573
     iget-object v0, p0, Lcom/android/server/notification/NotificationManagerService$6;->this$0:Lcom/android/server/notification/NotificationManagerService;
 
     invoke-static {v0}, Lcom/android/server/notification/NotificationManagerService;->-get24(Lcom/android/server/notification/NotificationManagerService;)Lcom/android/server/notification/RankingHelper;
@@ -3998,8 +4013,10 @@
     .param p3, "status"    # I
 
     .prologue
-     invoke-static {}, Lcom/android/server/notification/NotificationManagerService;->checkCallerIsSystemOrSystemUI()V
+    .line 1586
+    invoke-static {}, Lcom/android/server/notification/NotificationManagerService;->-wrap15()V
 
+    .line 1587
     iget-object v0, p0, Lcom/android/server/notification/NotificationManagerService$6;->this$0:Lcom/android/server/notification/NotificationManagerService;
 
     invoke-static {v0}, Lcom/android/server/notification/NotificationManagerService;->-get24(Lcom/android/server/notification/NotificationManagerService;)Lcom/android/server/notification/RankingHelper;
@@ -4075,8 +4092,10 @@
     .param p2, "reason"    # Ljava/lang/String;
 
     .prologue
-     invoke-static {}, Lcom/android/server/notification/NotificationManagerService;->checkCallerIsSystemOrSystemUI()V
+    .line 1930
+    invoke-static {}, Lcom/android/server/notification/NotificationManagerService;->-wrap15()V
 
+    .line 1931
     iget-object v0, p0, Lcom/android/server/notification/NotificationManagerService$6;->this$0:Lcom/android/server/notification/NotificationManagerService;
 
     invoke-static {v0}, Lcom/android/server/notification/NotificationManagerService;->-get33(Lcom/android/server/notification/NotificationManagerService;)Lcom/android/server/notification/ZenModeHelper;
@@ -4108,50 +4127,3 @@
     .line 1708
     return-void
 .end method
-
-.method public getPackageNotificationSoundTimeout(Ljava/lang/String;I)J
-    .locals 2
-    .param p1, "pkg"    # Ljava/lang/String;
-    .param p2, "uid"    # I
-
-    .prologue
-    invoke-static {}, Lcom/android/server/notification/NotificationManagerService;->checkCallerIsSystemOrSystemUI()V
-
-    iget-object v0, p0, Lcom/android/server/notification/NotificationManagerService$6;->this$0:Lcom/android/server/notification/NotificationManagerService;
-
-    invoke-static {v0}, Lcom/android/server/notification/NotificationManagerService;->-get24(Lcom/android/server/notification/NotificationManagerService;)Lcom/android/server/notification/RankingHelper;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1, p2}, Lcom/android/server/notification/RankingHelper;->getPackageNotificationSoundTimeout(Ljava/lang/String;I)J
-
-    move-result-wide v0
-
-    return-wide v0
-.end method
-
-.method public setPackageNotificationSoundTimeout(Ljava/lang/String;IJ)V
-    .locals 1
-    .param p1, "pkg"    # Ljava/lang/String;
-    .param p2, "uid"    # I
-    .param p3, "timeout"    # J
-
-    .prologue
-    invoke-static {}, Lcom/android/server/notification/NotificationManagerService;->checkCallerIsSystemOrSystemUI()V
-
-    iget-object v0, p0, Lcom/android/server/notification/NotificationManagerService$6;->this$0:Lcom/android/server/notification/NotificationManagerService;
-
-    invoke-static {v0}, Lcom/android/server/notification/NotificationManagerService;->-get24(Lcom/android/server/notification/NotificationManagerService;)Lcom/android/server/notification/RankingHelper;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1, p2, p3, p4}, Lcom/android/server/notification/RankingHelper;->setPackageNotificationSoundTimeout(Ljava/lang/String;IJ)V
-
-    iget-object v0, p0, Lcom/android/server/notification/NotificationManagerService$6;->this$0:Lcom/android/server/notification/NotificationManagerService;
-
-    invoke-virtual {v0}, Lcom/android/server/notification/NotificationManagerService;->savePolicyFile()V
-
-    return-void
-.end method
-
-
