@@ -181,7 +181,7 @@ If You experience R/W permission KO and/or 'cp stat' issues during fullota phase
 
 Just in case of issues with merge-passages, change APKTOOL_FRAME_PATH attribution in build/locals.mk (line 105), in order to match source dir for installed files - according to error message.
 
-For instance, if you get :
+<i>For instance, if you get :</i>
 
 apktool if(install framework): merged ...
 I: Framework installed to: /root/.local/share/apktool/framework/1-merged_l861.apk
@@ -189,7 +189,7 @@ I: Framework installed to: /root/.local/share/apktool/framework/63-merged_l861.a
 I: Framework installed to: <b>/root/.local/share/apktool/framework/</b>2-merged_l861.apk
 cp: cannot stat '<b>/home/android/.local/share/apktool/framework/</b>/1-merged_l861.apk': No such file or directory
 
-Apply the following changes to build/locals.mk
+<i>Apply the following changes to build/locals.mk :</i>
 
 APKTOOL_FRAME_PATH := /root/.local/share/apktool/framework
 
