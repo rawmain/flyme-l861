@@ -187,8 +187,8 @@ Just in case of issues with merge-passages, change APKTOOL_FRAME_PATH attributio
     apktool if(install framework): merged ...
     I: Framework installed to: /root/.local/share/apktool/framework/1-merged_l861.apk
     I: Framework installed to: /root/.local/share/apktool/framework/63-merged_l861.apk
-    I: Framework installed to: <b>/root/.local/share/apktool/framework/</b>2-merged_l861.apk
-    cp: cannot stat '<b>/home/android/.local/share/apktool/framework/</b>/1-merged_l861.apk': No such file or directory
+    I: Framework installed to: /root/.local/share/apktool/framework/2-merged_l861.apk
+    cp: cannot stat '/home/android/.local/share/apktool/framework//1-merged_l861.apk': No such file or directory
     >>>>>>>
 
 <i>Apply the following changes to build/locals.mk :</i>
