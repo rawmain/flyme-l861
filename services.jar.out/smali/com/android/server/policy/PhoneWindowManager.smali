@@ -9662,6 +9662,7 @@
     iput-boolean v6, p0, Lcom/android/server/policy/PhoneWindowManager;->mAllowLockscreenWhenOn:Z
 
     :cond_13
+    invoke-static/range {p0 .. p2}, Lcom/android/server/policy/PhoneWindowManager$FlymeInjector;->setHideLockScreen(Lcom/android/server/policy/PhoneWindowManager;Landroid/view/WindowManagerPolicy$WindowState;Landroid/view/WindowManager$LayoutParams;)V
     iget-object v5, p0, Lcom/android/server/policy/PhoneWindowManager;->mWinShowWhenLocked:Landroid/view/WindowManagerPolicy$WindowState;
 
     if-eqz v5, :cond_4
@@ -17681,6 +17682,7 @@
 
     iput-object v2, v0, Lcom/android/server/policy/PhoneWindowManager;->mWindowGestureManager:Lcom/android/internal/policy/smartwake/WindowGestureManager;
 
+    invoke-static/range {p0 .. p1}, Lcom/android/server/policy/PhoneWindowManager$FlymeInjector;->initFlymeExtraFields(Lcom/android/server/policy/PhoneWindowManager;Landroid/content/Context;)V
     return-void
 
     .end local v12    # "deviceKeyHandlerClass":Ljava/lang/String;
@@ -23077,7 +23079,8 @@
     :cond_4d
     and-int/lit8 v5, v24, 0x1
 
-    if-nez v5, :cond_2c
+
+    if-nez v5, :cond_flyme_0
 
     move-object/from16 v0, p0
 
@@ -23110,6 +23113,13 @@
 
     invoke-virtual/range {v21 .. v21}, Landroid/os/Message;->sendToTarget()V
 
+
+    :cond_flyme_0
+    move-object/from16 v0, p0
+    move-object/from16 v1, p1
+    move/from16 v2, v24
+    invoke-static {v0, v1, v2}, Lcom/android/server/policy/PhoneWindowManager$FlymeInjector;->interceptFlymeKeyBeforeQueueing(Lcom/android/server/policy/PhoneWindowManager;Landroid/view/KeyEvent;I)I
+    move-result v24
     goto/16 :goto_15
 
     .end local v21    # "msg":Landroid/os/Message;

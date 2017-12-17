@@ -2130,6 +2130,8 @@
     if-ne v4, v5, :cond_1c
 
     const/16 v17, 0x1
+    invoke-direct/range {p0 .. p1}, Lcom/android/server/notification/NotificationManagerService;->notifyFlymeWakeupScreen(Lcom/android/server/notification/NotificationRecord;)V
+    move-object/from16 v0, p0
 
     .local v17, "convertSoundToVibration":Z
     :goto_d
