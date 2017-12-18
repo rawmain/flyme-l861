@@ -1531,6 +1531,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
+
     new-instance v73, Lcom/android/server/MzInputMethodManagerService;
 
     move-object/from16 v0, v73
@@ -1754,6 +1755,7 @@
     const-string v4, "Status Bar"
 
     invoke-static {v3, v4}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+
 
     new-instance v101, Lcom/android/server/statusbar/FlymeExtStatusBarManagerService;
 
@@ -2859,17 +2861,22 @@
 
     invoke-virtual {v3, v4}, Lcom/android/server/SystemServiceManager;->startService(Ljava/lang/Class;)Lcom/android/server/SystemService;
 
-    :cond_1c
 
+
+    :cond_1c
     goto/16 :goto_flyme_0
 
     if-nez v56, :cond_1d
     if-eqz v51, :cond_32
 
     .end local v33    # "atlas":Lcom/android/server/AssetAtlasService;
+
+
+
+
+
+
     :cond_1d
-
-
     :goto_flyme_0
     :goto_27
     if-nez v56, :cond_1e
@@ -3195,6 +3202,7 @@
 
     .end local v85    # "mmsService":Lcom/android/server/MmsServiceBroker;
     check-cast v85, Lcom/android/server/MmsServiceBroker;
+
 
     .local v85, "mmsService":Lcom/android/server/MmsServiceBroker;
 

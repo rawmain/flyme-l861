@@ -4117,7 +4117,6 @@
     return-void
 .end method
 
-
 .method public getPackageNotificationSoundTimeout(Ljava/lang/String;I)J
     .locals 2
     .param p1, "pkg"    # Ljava/lang/String;
@@ -4125,43 +4124,25 @@
 
     .prologue
     invoke-static {}, Lcom/android/server/notification/NotificationManagerService;->checkCallerIsSystemOrSystemUI()V
-
     iget-object v0, p0, Lcom/android/server/notification/NotificationManagerService$6;->this$0:Lcom/android/server/notification/NotificationManagerService;
-
     invoke-static {v0}, Lcom/android/server/notification/NotificationManagerService;->-get24(Lcom/android/server/notification/NotificationManagerService;)Lcom/android/server/notification/RankingHelper;
-
     move-result-object v0
-
     invoke-virtual {v0, p1, p2}, Lcom/android/server/notification/RankingHelper;->getPackageNotificationSoundTimeout(Ljava/lang/String;I)J
-
     move-result-wide v0
-
     return-wide v0
 .end method
-
-
-
 .method public setPackageNotificationSoundTimeout(Ljava/lang/String;IJ)V
     .locals 1
     .param p1, "pkg"    # Ljava/lang/String;
     .param p2, "uid"    # I
     .param p3, "timeout"    # J
-
     .prologue
     invoke-static {}, Lcom/android/server/notification/NotificationManagerService;->checkCallerIsSystemOrSystemUI()V
-
     iget-object v0, p0, Lcom/android/server/notification/NotificationManagerService$6;->this$0:Lcom/android/server/notification/NotificationManagerService;
-
     invoke-static {v0}, Lcom/android/server/notification/NotificationManagerService;->-get24(Lcom/android/server/notification/NotificationManagerService;)Lcom/android/server/notification/RankingHelper;
-
     move-result-object v0
-
     invoke-virtual {v0, p1, p2, p3, p4}, Lcom/android/server/notification/RankingHelper;->setPackageNotificationSoundTimeout(Ljava/lang/String;IJ)V
-
     iget-object v0, p0, Lcom/android/server/notification/NotificationManagerService$6;->this$0:Lcom/android/server/notification/NotificationManagerService;
-
     invoke-virtual {v0}, Lcom/android/server/notification/NotificationManagerService;->savePolicyFile()V
-
     return-void
 .end method
-

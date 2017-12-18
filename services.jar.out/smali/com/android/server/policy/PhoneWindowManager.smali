@@ -9661,6 +9661,7 @@
 
     iput-boolean v6, p0, Lcom/android/server/policy/PhoneWindowManager;->mAllowLockscreenWhenOn:Z
 
+
     :cond_13
     invoke-static/range {p0 .. p2}, Lcom/android/server/policy/PhoneWindowManager$FlymeInjector;->setHideLockScreen(Lcom/android/server/policy/PhoneWindowManager;Landroid/view/WindowManagerPolicy$WindowState;Landroid/view/WindowManager$LayoutParams;)V
     iget-object v5, p0, Lcom/android/server/policy/PhoneWindowManager;->mWinShowWhenLocked:Landroid/view/WindowManagerPolicy$WindowState;
@@ -17672,15 +17673,15 @@
     .line 1872
     :cond_4
     :goto_4
-    new-instance v2, Lcom/android/internal/policy/smartwake/WindowGestureManager;
 
-    move-object/from16 v0, p1
 
-    invoke-direct {v2, v0}, Lcom/android/internal/policy/smartwake/WindowGestureManager;-><init>(Landroid/content/Context;)V
 
-    move-object/from16 v0, p0
 
-    iput-object v2, v0, Lcom/android/server/policy/PhoneWindowManager;->mWindowGestureManager:Lcom/android/internal/policy/smartwake/WindowGestureManager;
+
+
+
+
+
 
     invoke-static/range {p0 .. p1}, Lcom/android/server/policy/PhoneWindowManager$FlymeInjector;->initFlymeExtraFields(Lcom/android/server/policy/PhoneWindowManager;Landroid/content/Context;)V
     return-void
