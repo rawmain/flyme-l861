@@ -1579,6 +1579,8 @@
     const/16 v11, -0x3e8
 
 
+
+
     if-eq v10, v11, :cond_flyme_0
 
     iput v10, v6, Lcom/android/server/notification/RankingHelper$Record;->visibility:I
