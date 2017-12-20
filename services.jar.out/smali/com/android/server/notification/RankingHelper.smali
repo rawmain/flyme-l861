@@ -1597,9 +1597,6 @@
 
     invoke-direct {v0, v1, v6}, Lcom/android/server/notification/RankingHelper;->readFlymeExtraFields(Lorg/xmlpull/v1/XmlPullParser;Lcom/android/server/notification/RankingHelper$Record;)V
 
-    :cond_8
-
-
     goto/16 :goto_0
 
     .end local v6    # "r":Lcom/android/server/notification/RankingHelper$Record;
