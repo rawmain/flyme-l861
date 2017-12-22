@@ -155,6 +155,8 @@ PPLAgent                   u:object_r:ppl_agent_service:s0
 media.mmsdk         u:object_r:mediaserver_service:s0
 multiwindow_service_v1 	u:object_r:system_app_service:s0
 media.VTS           u:object_r:vtservice_service:s0
+
+
 move_window                               u:object_r:move_window_service:s0
 flyme_packagemanager                      u:object_r:flyme_packagemanager_service:s0
 flyme_theme_service                       u:object_r:flyme_theme_manager_service:s0
