@@ -1,11 +1,13 @@
 # flyme-l861
-Flyme 6.7.12.8IR (MM6.0) files for AMOI L861 (aka Stonex One / Santin Dante-Marconi)
+Flyme 6.7.12.15IR (MM6.0) files for AMOI L861 (aka Stonex One / Santin Dante-Marconi)
 
 # Pre-requirements 
 
 1. This repo requires GIT >= 1.8.2 & GIT-LFS = check your git version & install/enable LFS. Instructions on https://github.com/git-lfs/git-lfs/wiki/Installation
 
 2. Once repo has been downloaded/cloned check that custom_app.sh & custom_jar_sh have 755 permissions. Otherwise fix them.
+
+3. Repo files have been already patched. Therefore, if You just want to build it, setup Flyme build environment (according to instructions below) and launch directly flyme fullota.
 
 --------
 
