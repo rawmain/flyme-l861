@@ -1579,23 +1579,27 @@
     const/16 v11, -0x3e8
 
 
-    if-eq v10, v11, :cond_flyme_0
 
+
+    if-eq v10, v11, :cond_flyme_0
     iput v10, v6, Lcom/android/server/notification/RankingHelper$Record;->visibility:I
 
     :cond_flyme_0
-    
+
     const/4 v11, 0x1
 
     if-eq v1, v11, :cond_2
 
     iput v1, v6, Lcom/android/server/notification/RankingHelper$Record;->keyguard:I
-    
+
     move-object/from16 v0, p0
 
     move-object/from16 v1, p1
 
     invoke-direct {v0, v1, v6}, Lcom/android/server/notification/RankingHelper;->readFlymeExtraFields(Lorg/xmlpull/v1/XmlPullParser;Lcom/android/server/notification/RankingHelper$Record;)V
+
+
+
 
     goto/16 :goto_0
 
