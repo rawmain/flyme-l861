@@ -1,6 +1,14 @@
 # flyme-l861
 Flyme 6.7.12.15IR (MM6.0) files for AMOI L861 (aka Stonex One / Santin Dante-Marconi)
 
+Built packages available for download at :
+
+- Main Repo L861 https://goo.gl/9GSjzW (subfolder 99_ROM_M_FLYMEOS_6_712x)
+
+- NeedRom page https://www.needrom.com/download/l861-flymeos-6-7-12-8ir/
+
+--------
+
 # Pre-requirements 
 
 1. This repo requires GIT >= 1.8.2 & GIT-LFS = check your git version & install/enable LFS. Instructions on https://github.com/git-lfs/git-lfs/wiki/Installation
