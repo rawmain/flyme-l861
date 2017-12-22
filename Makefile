@@ -93,7 +93,7 @@ board_saved_files := lib64/libwebviewchromium.so
 # The default value is nothing.
 # You can configure the board system apk name in the value.
 #-----------------------------------------------------------------------------
-board_remove_apps := AppCenterIntl MzSecurity
+board_remove_apps := AppCenterIntl LogReport MzSecurity
 
 ##############################################################################
 # The value decides which apk you want to modify, when the apk is based on the board system apk.
