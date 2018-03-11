@@ -1,5 +1,5 @@
 # flyme-l861
-Flyme 6.7.12.15IR (MM6.0) files for AMOI L861 (aka Stonex One / Santin Dante-Marconi)
+Flyme 6.7.12.x IR (MM6.0.1) files for AMOI L861 (aka Stonex One / Santin Dante-Marconi)
 
 Built packages available for download at :
 
